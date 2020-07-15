@@ -10,10 +10,10 @@
 //  Variables
 //  ============================================================
 
-$main-offset-left:                  250px !default;
-$main-width:                        calc(100% - 300px) !default;
-$main-padding-vertical:             gutter(medium) !default;
-$main-padding-horizontal:           gutter(large) !default;
+$main-wrapper-min-height:               100px !default;
+$main-wrapper-padding-vertical:         gutter(medium) !default;
+$main-wrapper-padding-horizontal:       gutter(medium) !default;
+$main-wrapper-background:               background-color(background) !default;
 
 /* ============================================================
     Component: Main
@@ -21,17 +21,10 @@ $main-padding-horizontal:           gutter(large) !default;
 
 .#{$prefix}-main-wrapper {
     position: relative;
-    left: $main-offset-left;
 
-    width: $main-width;
-    padding: $main-padding-vertical $main-padding-horizontal;
+    min-height: $main-wrapper-min-height;
+    width: 100%;
+    padding: $main-wrapper-padding-vertical $main-wrapper-padding-horizontal;
     box-sizing: border-box;
-}
-
-@include respond-to-max(medium) {
-    .#{$prefix}-main-wrapper {
-        left: auto;
-        width: 100%;
-        padding: gutter(small) gutter(xsmall);
-    }
+    background-color: $main-wrapper-background;
 }
