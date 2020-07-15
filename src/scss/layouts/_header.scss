@@ -1,0 +1,24 @@
+//  ============================================================
+//  Name:               Header
+//  Description:        Create hero on the top of site
+//
+//  Component:          `#{$prefix}-header-*`
+//
+//  ============================================================
+
+//  ============================================================
+//  Variables
+//  ============================================================
+
+$header-offset-left:                  250px !default;
+$header-width:                        calc(100% - 300px) !default;
+$header-padding-vertical:             gutter(medium) !default;
+$header-padding-horizontal:           gutter(large) !default;
+
+/* ============================================================
+    Component: Header
+   ============================================================ */
+
+.#{$prefix}-header-wrapper {
+    position: relative;
+}

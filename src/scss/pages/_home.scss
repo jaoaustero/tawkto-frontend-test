@@ -1,0 +1,24 @@
+//  ============================================================
+//  Name:               Home
+//  Description:        Create custom style for home page
+//
+//  Component:          `#{$prefix}-home-*`
+//
+//  ============================================================
+
+//  ============================================================
+//  Variables
+//  ============================================================
+
+$home-offset-left:                  250px !default;
+$home-width:                        calc(100% - 300px) !default;
+$home-padding-vertical:             gutter(medium) !default;
+$home-padding-horizontal:           gutter(large) !default;
+
+/* ============================================================
+    Component: Home
+   ============================================================ */
+
+.#{$prefix}-home-wrapper {
+    position: relative;
+}
