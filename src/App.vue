@@ -1,19 +1,26 @@
 <template>
     <div id="app">
-        <img alt="Vue logo" src="./assets/logo.png">
-        <HelloWorld msg="Welcome to Your Vue.js App"/>
+        <the-header />
+
+        <main class="t-main-wrapper">
+            <transition
+                name="t-fade"
+                mode="out-in">
+                <router-view />
+            </transition>
+        </main>
     </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import TheHeader from '@/views/layouts/header';
 
 export default {
     name: 'App',
 
     components:
     {
-        HelloWorld,
+        TheHeader,
     },
 };
 </script>
