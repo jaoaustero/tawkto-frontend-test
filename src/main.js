@@ -5,7 +5,7 @@ import Vue from 'vue';
 // import { store } from './stores';
 
 // Routes
-// import { router } from './router';
+import { router } from './router';
 
 // Entry file
 import App from './App';
@@ -20,7 +20,7 @@ Vue.config.productionTip = false;
 
 new Vue({
     el: '#app',
-    // router,
+    router,
     // store,
     render: (h) => h(App),
 });
