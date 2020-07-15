@@ -1,0 +1,15 @@
+{
+    "UISButton":
+    {
+        "scope": "vue",
+        "prefix": "TButton",
+        "body":
+        [
+            "<t-button",
+            "    :color=\"'primary'\">",
+            "\t${4}",
+            "</t-button>"
+        ],
+        "description": "Tawk Component Button",
+    },
+}
