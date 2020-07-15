@@ -1,8 +1,26 @@
+// Core
 import Vue from 'vue';
-import App from './App.vue';
+
+// Store
+// import { store } from './stores';
+
+// Routes
+// import { router } from './router';
+
+// Entry file
+import App from './App';
+
+// UI Component
+// import './components';
+
+// Directives
+// import './directives';
 
 Vue.config.productionTip = false;
 
 new Vue({
-  render: (h) => h(App),
-}).$mount('#app');
+    el: '#app',
+    // router,
+    // store,
+    render: (h) => h(App),
+});
