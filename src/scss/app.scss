@@ -17,49 +17,22 @@
  *                          hover or touch
  *
  * COMPONENTS
- * _accordion...............Expandable panels for long contents
- * _alert...................A message that calls attention and alert users
- * _autocomplete............A dropdown menu suggestion
  * _breadcrumb..............A collection of links
- * _dropdown................An Interactive toggleable dropdown menu
- * _lightbox................An image, video or iframe viewer
- * _modal...................Pop-up dialogs, that overlay on the page
- * _nav.....................A different style for navigation menu
- * _navbar..................Reponsive horizontal navbar that contains menu
- * _offcanvas...............Sidebar that slides in and out of the page
- * _pagination..............Nice style for pagination to navigate throught page
- * _slider..................Create a responsive carousel slider
- * _state...................A placeholder for different state
- * _subnav..................Horizontal navigation with different styles
- * _switcher................Dynamically transition through different content
- * _toast...................Pop-up notification to alert users
- * _thread..................A collection of comments
- * _toast...................Pop-up notification message
  *
  * ELEMENTS
- * _avatar..................Create Icon. Photo, Initial for users
- * _badge...................Display a number as notifications
  * _button..................Classic button with different color, sizes
  *                          and states
  * _card....................Container with gutter and other differnt style
- * _chips...................Create a notification badge
- * _close...................Versatile delete/close cross
  * _container...............Center your content horizontally
  * _divider.................Divide the section of the content
  * _form....................Collection of user inputs
  * _icon....................Display a material icons
- * _label...................Indicate important notes and highlight a word
  * _link....................Link with different style
- * _list....................List with different modifiers
- * _overlay.................Image overlay with different modifiers
- * _progress................Define progress bars indicate the long process
- * _sticky..................Make elements remain at the top of the viewport
  * _table...................Display collection of data grouped into rows
  * _text....................Depth for the page with different modifiers for
  *                          title and paragraphs
  *
  * GRID
- * _column..................Display content in multiple text columns
  * _grid....................Create full-reponsive, fluid and nestable grid
  *                          layout
  * _width...................Define width of elements of different viewport size
@@ -74,16 +47,11 @@
  * LAYOUTS
  * _header..................A showcasing hero text
  * _main....................Collection of different sections of the page
- * _section.................Container to divider your page
- * _footer..................Contains information or list of navigations
  *
  * PAGES
- * _auth....................A default page for application
+ * _home....................A default page for application
  *
  * THEMES
- * _gloomy..................Feminine and light colors
- * _soft....................Light and pastel colors
- * _night...................Night or dark colors
  *
  * APP......................A collection of all `scss` files
  */
@@ -98,6 +66,7 @@
 
 /* Base
    ============================================================ */
+@import './base/animate';
 @import './base/background';
 @import './base/flex';
 @import './base/margin';
