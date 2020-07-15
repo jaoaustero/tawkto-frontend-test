@@ -405,7 +405,7 @@ module.exports = {
          *
          * Reference: https://stylelint.io/user-guide/rules/custom-property-pattern
          */
-        'custom-property-pattern': 'uis-.+',
+        'custom-property-pattern': 't-.+',
 
         /**
          * Type: String
