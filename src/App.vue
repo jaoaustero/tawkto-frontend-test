@@ -3,11 +3,13 @@
         <the-header />
 
         <main class="t-main-wrapper">
-            <transition
-                name="t-fade"
-                mode="out-in">
-                <router-view />
-            </transition>
+            <t-container>
+                <transition
+                    name="t-fade"
+                    mode="out-in">
+                    <router-view />
+                </transition>
+            </t-container>
         </main>
     </div>
 </template>
@@ -27,4 +29,5 @@ export default {
 
 <style lang="scss">
     @import './scss/app';
+    @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 </style>
