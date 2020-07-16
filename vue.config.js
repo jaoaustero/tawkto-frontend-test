@@ -8,6 +8,8 @@
 
 'use strict';
 
+const dataObj = require('./src/data/data.json');
+
 // 3rd party dependencies
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 const CleanTerminalPlugin = require('clean-terminal-webpack-plugin');
@@ -337,6 +339,40 @@ module.exports = {
              */
             errors: true,
         },
+
+        /**
+         *
+         * @param {*} app
+         * @param {*} server
+         * @param {*} compiler
+         */
+        before: function(app, server, compiler) {
+			app.get('/api/categories', function (req, res) {
+				res.json({ data: dataObj.categories });
+			});
+
+			app.get('/api/category/*', function (req, res) {
+				res.json({ data: dataObj.articles });
+			});
+
+			app.get('/api/author/*', function (req, res) {
+				let author = {};
+				const authorId = req.params['0'];
+
+				for (let index = 0; index < dataObj.authors.length; index++) {
+					if (dataObj.authors[index].id === authorId) {
+						author = dataObj.authors[index];
+						break;
+					}
+
+				}
+				res.json({ data: author });
+			});
+
+			app.get('/api/search/*', function (req, res) {
+				res.json({ data: dataObj.articles });
+			});
+		}
     },
 
     /**
