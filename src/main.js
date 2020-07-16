@@ -11,7 +11,7 @@ import { router } from './router';
 import App from './App';
 
 // UI Component
-// import './components';
+import './components';
 
 // Directives
 // import './directives';
