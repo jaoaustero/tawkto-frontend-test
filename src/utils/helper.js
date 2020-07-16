@@ -55,7 +55,6 @@ export const Helper = {
         return typeof obj === 'function';
     },
 
-
     /**
      * Check if this object in array is already existing.
      *
