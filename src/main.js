@@ -14,7 +14,7 @@ import App from './App';
 import './components';
 
 // Directives
-// import './directives';
+import './directives';
 
 Vue.config.productionTip = false;
 
