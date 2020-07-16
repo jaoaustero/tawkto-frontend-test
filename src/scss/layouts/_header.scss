@@ -18,19 +18,44 @@ $header-wrapper-padding-horizontal:             gutter(large) !default;
     Component: Header
    ============================================================ */
 
+/**
+ * 1. Align the item vertical and horizontal center
+ * 2. Set dimensions
+ * 3. Style
+ */
 .#{$prefix}-header-wrapper {
+    /* 1 */
     display: flex;
     align-items: center;
     justify-content: center;
 
-    position: relative;
-    box-sizing: border-box;
-
+    /* 2 */
     height: $header-wrapper-height;
     width: 100%;
     padding: $header-wrapper-padding-vertical $header-wrapper-padding-horizontal;
+
+    /* 3 */
+    position: relative;
+    box-sizing: border-box;
 }
 
+/**
+ * Make the items horizontal center.
+ */
 .#{$prefix}-header-wrapper > * {
     text-align: center;
+}
+
+
+
+/* Form
+   ============================================================ */
+
+.#{$prefix}-header-form {
+    display: flex;
+    align-items: center;
+}
+
+.#{$prefix}-header-form > *:first-child {
+    width: 100%;
 }
