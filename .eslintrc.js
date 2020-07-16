@@ -388,7 +388,7 @@ module.exports = {
          *
          * @see {@link https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/extensions.md}
          */
-        'import/extensions': 'never',
+        'import/extensions': 'off',
 
         /**
          * disallow reassignment of function parameters and disallow parameter
