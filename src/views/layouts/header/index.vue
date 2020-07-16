@@ -10,6 +10,20 @@
                     Everything you need to Manage your Messaging
                 </p>
             </div>
+
+            <div class="t-header-form"
+                v-margin.top>
+                <t-input
+                    :margin="false"
+                    :width="'1-1'"
+                    placeholder="Search for answers"/>
+                <t-button
+                    :color="'primary'"
+                    :icon="true">
+                    <t-icon
+                        :type="'search'"/>
+                </t-button>
+            </div>
         </div>
     </header>
 </template>
