@@ -2,7 +2,7 @@
 import Vue from 'vue';
 
 // Store
-// import { store } from './stores';
+import { store } from './stores';
 
 // Routes
 import { router } from './router';
@@ -21,6 +21,6 @@ Vue.config.productionTip = false;
 new Vue({
     el: '#app',
     router,
-    // store,
+    store,
     render: (h) => h(App),
 });
