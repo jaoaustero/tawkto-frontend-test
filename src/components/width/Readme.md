@@ -1,0 +1,83 @@
+### Usage
+Use the ***:xsmall***, ***:small***, ***:medium***, ***:large***,
+***:xlarge*** props to specify the width based on the size of the
+viewport.
+
+```vue
+<template>
+    <t-grid class="t-text-center">
+        <t-width
+            :xsmall="'1-1'"
+            :small="'1-2'"
+            :large="'1-4'"
+            :xlarge="'1-6'">
+            <div
+                class="t-card
+                    t-card-body
+                    t-card-default">
+                    Item
+            </div>
+        </t-width>
+        <t-width
+            :xsmall="'1-1'"
+            :small="'1-2'"
+            :large="'1-4'"
+            :xlarge="'1-6'">
+            <div
+                class="t-card
+                    t-card-body
+                    t-card-default">
+                    Item
+            </div>
+        </t-width>
+        <t-width
+            :xsmall="'1-1'"
+            :small="'1-2'"
+            :large="'1-4'"
+            :xlarge="'1-6'">
+            <div
+                class="t-card
+                    t-card-body
+                    t-card-default">
+                    Item
+            </div>
+        </t-width>
+        <t-width
+            :xsmall="'1-1'"
+            :small="'1-2'"
+            :large="'1-4'"
+            :xlarge="'1-6'">
+            <div
+                class="t-card
+                    t-card-body
+                    t-card-default">
+                    Item
+            </div>
+        </t-width>
+        <t-width
+            :xsmall="'1-1'"
+            :small="'1-2'"
+            :large="'1-4'"
+            :xlarge="'1-6'">
+            <div
+                class="t-card
+                    t-card-body
+                    t-card-default">
+                    Item
+            </div>
+        </t-width>
+        <t-width
+            :xsmall="'1-1'"
+            :small="'1-2'"
+            :large="'1-4'"
+            :xlarge="'1-6'">
+            <div
+                class="t-card
+                    t-card-body
+                    t-card-default">
+                    Item
+            </div>
+        </t-width>
+    </t-grid>
+</template>
+```
