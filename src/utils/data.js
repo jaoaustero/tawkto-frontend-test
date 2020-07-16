@@ -52,4 +52,30 @@ export const Data = {
 
         return obj.filter((item) => item[property] === 1);
     },
+
+    /**
+     * Filter the data based on the filter objects
+     *
+     * @param { Array } data - collection of data in array
+     * @param { Object } filter - object of filters
+     */
+    filterArray({ data = null, filter = {} })
+    {
+        if (data === null && Helper.isObjectEmpty(filter))
+        {
+            return;
+        }
+
+        return data.filter((item) =>
+        {
+            for (const key in filter)
+            {
+                if (item[key] === undefined || item[key] !== filter[key])
+                {
+                    return false;
+                }
+            }
+            return true;
+        });
+    },
 };
