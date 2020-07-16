@@ -28,7 +28,7 @@
 			"updatedOn": "2019-12-16T14:11:04.658Z",
 			"enabled": true,
 			"order": 3,
-			"icon": "deskop",
+			"icon": "desktop",
 			"totalArticle" : 20
 		}, {
 			"id" : "cat4",
@@ -48,7 +48,7 @@
 			"updatedOn": "2019-12-18T09:54:35.029Z",
 			"enabled": true,
 			"order": 4,
-			"icon": "gem",
+			"icon": "diamond",
 			"totalArticle" : 5
 		}, {
 			"id" : "cat6",
