@@ -1,26 +1,15 @@
 <template>
     <div>
-        Yow!
+        <transition
+            name="t-fade"
+            mode="out-in">
+            <router-view />
+        </transition>
     </div>
 </template>
 
 <script>
-// Meta
-import { meta } from '@/meta';
-
 export default {
     name: 'Home',
-
-    mixins:
-    [
-        meta,
-    ],
-
-    data()
-    {
-        return {
-            metaTitle: 'Home',
-        };
-    },
 };
 </script>

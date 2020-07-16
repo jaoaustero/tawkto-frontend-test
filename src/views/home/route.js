@@ -1,11 +1,30 @@
 export default [
     {
         path: '/',
-        name: 'Home',
         component: () => import('@/views/home'),
-        meta:
-        {
-            breadcrumbs: 'Home',
-        },
+        children:
+        [
+            {
+                path: '',
+                name: 'HomeList',
+                component: () => import('@/views/home/pages/list'),
+                meta:
+                {
+                    page: 'index',
+                    breadcrumbs: 'All Categories',
+                },
+            },
+
+            {
+                path: ':id',
+                name: 'HomeView',
+                component: () => import('@/views/home/pages/show'),
+                meta:
+                {
+                    page: 'show',
+                    breadcrumbs: 'View',
+                },
+            },
+        ],
     },
 ];
