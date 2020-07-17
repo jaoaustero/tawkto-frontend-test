@@ -341,6 +341,8 @@ module.exports = {
         },
 
         /**
+         * Mock API endpoint to diplay the data from the
+         * json provided.
          *
          * @param {*} app
          * @param {*} server
