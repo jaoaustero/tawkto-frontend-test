@@ -24,7 +24,7 @@
                     </p>
                     <p class="t-text-muted"
                         v-margin.remove>
-                        Last update 2 days ago
+                        Last update <timeago :datetime="item.updatedOn"/>
                     </p>
                 </div>
             </t-card-body>
