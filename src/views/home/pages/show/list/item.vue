@@ -18,7 +18,7 @@
                     </p>
                     <p class="t-text-muted"
                         v-margin.remove>
-                        Updated jun 15, 2019
+                        Updated {{ lastUpdated }}
                     </p>
                 </div>
 
@@ -34,6 +34,9 @@
 </template>
 
 <script>
+// Utils
+import { DateUtil } from '@/utils';
+
 export default {
     name: 'ListItem',
 
@@ -43,6 +46,14 @@ export default {
         {
             type: Object,
             required: true,
+        },
+    },
+
+    computed:
+    {
+        lastUpdated()
+        {
+            return DateUtil.format(this.item.updatedOn);
         },
     },
 };
