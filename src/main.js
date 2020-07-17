@@ -1,6 +1,9 @@
 // Core
 import Vue from 'vue';
 
+// Timeago
+import VueTimeago from 'vue-timeago';
+
 // Store
 import { store } from './stores';
 
@@ -17,6 +20,11 @@ import './components';
 import './directives';
 
 Vue.config.productionTip = false;
+
+Vue.use(VueTimeago, {
+    name: 'Timeago',
+    locale: 'en',
+});
 
 new Vue({
     el: '#app',
