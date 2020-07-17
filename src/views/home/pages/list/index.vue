@@ -35,7 +35,7 @@ import { meta } from '@/meta';
 import { Data } from '@/utils';
 
 // Components
-import Item from './item';
+import Item from '../../components/categories/item';
 
 export default {
     name: 'HomeList',
