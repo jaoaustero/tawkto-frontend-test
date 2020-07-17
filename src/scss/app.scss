@@ -28,6 +28,7 @@
  * _form....................Collection of user inputs
  * _icon....................Display a material icons
  * _link....................Link with different style
+ * _list....................List with different modifiers
  * _table...................Display collection of data grouped into rows
  * _text....................Depth for the page with different modifiers for
  *                          title and paragraphs
@@ -94,6 +95,7 @@
 @import './elements/form';
 @import './elements/icon';
 @import './elements/link';
+@import './elements/list';
 @import './elements/table';
 @import './elements/text';
 
