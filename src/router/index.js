@@ -18,4 +18,8 @@ export const router = new Router({
     linkExactActiveClass: 't-active',
     root: '/',
     routes,
+    scrollBehavior()
+    {
+        return { x: 0, y: 0 };
+    },
 });
