@@ -371,8 +371,19 @@ module.exports = {
 				res.json({ data: author });
 			});
 
-			app.get('/api/search/*', function (req, res) {
-				res.json({ data: dataObj.articles });
+            app.get('/api/search/*', function (req, res) {
+                let articles = [];
+                const title = req.params['0'];
+
+                for (let index = 0; index < dataObj.articles.length; index++)
+                {
+                    if (dataObj.articles[index].title === title)
+                    {
+                        articles.push(dataObj.articles[index]);
+                    }
+                }
+
+				res.json({ data: articles });
 			});
 		}
     },
