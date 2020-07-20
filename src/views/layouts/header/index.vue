@@ -13,13 +13,14 @@
 
             <div class="t-header-form"
                 v-margin.top>
-                <t-input
-                    :margin="false"
-                    :width="'1-1'"
-                    placeholder="Search for answers"/>
+                <input class="t-input t-width-1-1"
+                    placeholder="Search for answers"
+                    v-model="title"
+                    v-on:keyup.enter="search">
                 <t-button
                     :color="'primary'"
-                    :icon="true">
+                    :icon="true"
+                    @click="search">
                     <t-icon
                         :type="'search'"/>
                 </t-button>
@@ -29,7 +30,45 @@
 </template>
 
 <script>
+// Vuex
+import { mapActions } from 'vuex';
+
 export default {
     name: 'TheHeader',
+
+    data()
+    {
+        return {
+            title: '',
+        };
+    },
+
+    methods:
+    {
+        ...mapActions({
+            load: 'search/load',
+        }),
+
+        /**
+         * Search method that will call an endpoint from API
+         */
+        async search()
+        {
+            const response = await this.load(`/search/${this.title}`);
+
+            if (response.status === 200)
+            {
+                // Push into search results page
+                this.$router.push({ path: `/search/${this.title}` });
+
+                // Clear the form
+                this.title = '';
+            }
+            else
+            {
+                alert(response);
+            }
+        },
+    },
 };
 </script>
